@@ -25,7 +25,7 @@ onMounted(async () => {
     <div class="container mx-auto grid grid-cols-8 gap-4 py-8">
       <BaseCard
         v-for="ghibli in ghibliFilms"
-        :key="ghibli._id"
+        :key="ghibli.id"
         :ghibli="ghibli"
       />
     </div>
