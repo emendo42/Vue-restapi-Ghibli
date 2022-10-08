@@ -24,9 +24,9 @@ onMounted(async () => {
   <main class="min-h-screen bg-gradient-to-b from-blue-900 to-green-700">
     <div class="container mx-auto grid grid-cols-8 gap-4 py-8">
       <BaseCard
-        v-for="ghibli in ghibliFilms"
-        :key="ghibli.id"
-        :ghibli="ghibli"
+        v-for="films in ghibliFilms"
+        :key="films.id"
+        :films="films"
       />
     </div>
   </main>

@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  ghibli: {
+  films: {
     type: Object,
     default: () => ({
       id: -1,
