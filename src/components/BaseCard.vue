@@ -3,9 +3,9 @@ const props = defineProps({
   ghibli: {
     type: Object,
     default: () => ({
-      _id: -1,
-      name: 'Unknown',
-      imageUrl: 'https://via.placeholder.com/150',
+      id: -1,
+      title: 'Unknown',
+      image: 'https://via.placeholder.com/150',
     }),
   },
 })
@@ -13,16 +13,13 @@ const props = defineProps({
 
 <template>
   <RouterLink
-    :to="`/ghibli/${props.ghibli._id}`"
+    :to="`/films/${props.films.id}`"
     class="rounded-lg bg-white shadow-lg"
   >
-    <img
-      class="w-full rounded-t-lg object-cover"
-      :src="props.ghibli.imageUrl"
-    />
+    <img class="w-full rounded-t-lg object-cover" :src="props.films.image" />
     <div class="p-4">
       <h2 class="text-2xl font-semibold text-gray-800">
-        {{ props.ghibli.name }}
+        {{ props.films.title }}
       </h2>
     </div>
   </RouterLink>

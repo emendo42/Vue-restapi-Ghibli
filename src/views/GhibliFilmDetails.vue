@@ -26,7 +26,7 @@ onUnmounted(() => {
     >
       <img :src="currentGhibliFilm.image" :alt="currentGhibliFilm.name" />
       <h1 class="text-white-800 text-6xl font-bold">
-        Hi, I'm {{ currentGhibliFilm.title }}
+        My film is called {{ currentGhibliFilm.title }}
       </h1>
       <pre>{{ currentGhibliFilm }}</pre>
     </div>
