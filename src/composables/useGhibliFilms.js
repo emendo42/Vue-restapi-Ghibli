@@ -15,7 +15,7 @@ const useGhibliFilms = () => {
         page: page.value,
       },
     })
-    ghibliFilms.value.push(...data.data)
+    ghibliFilms.value.push(...data)
     page.value++
   }
 

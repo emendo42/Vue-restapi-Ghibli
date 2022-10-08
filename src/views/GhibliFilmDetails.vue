@@ -18,7 +18,7 @@ onUnmounted(() => {
 
 <template>
   <main
-    class="min-h-screen bg-gradient-to-r from-fuchsia-900 to-red-700 py-8 text-white"
+    class="min-h-screen bg-gradient-to-b from-blue-900 to-green-700 py-8 text-white"
   >
     <div
       v-if="currentGhibliFilm"
@@ -28,7 +28,9 @@ onUnmounted(() => {
       <h1 class="text-white-800 text-6xl font-bold">
         My film is called {{ currentGhibliFilm.title }}
       </h1>
-      <pre>{{ currentGhibliFilm }}</pre>
+      <pre>
+        {{ currentGhibliFilm }}
+      </pre>
     </div>
   </main>
 </template>
